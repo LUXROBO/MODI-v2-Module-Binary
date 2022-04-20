@@ -77,13 +77,13 @@ def build(release_version):
                     bootloader_e230_version_list = os.listdir(bootloader_e230_version_dir)
                     bootloader_e230_version_list = sorted(bootloader_e230_version_list, key=cmp_to_key(compare_version), reverse=True)
                     if len(bootloader_e230_version_list):
-                        latest_version["bootloader_e230"] = version_list[0]
+                        latest_version["bootloader_e230"] = bootloader_e230_version_list[0]
                     # check e103
                     bootloader_e103_version_dir = os.path.join(root, ele, "e103")
                     bootloader_e103_version_list = os.listdir(bootloader_e103_version_dir)
                     bootloader_e103_version_list = sorted(bootloader_e103_version_list, key=cmp_to_key(compare_version), reverse=True)
                     if len(bootloader_e103_version_list):
-                        latest_version["bootloader_e103"] = version_list[0]
+                        latest_version["bootloader_e103"] = bootloader_e103_version_list[0]
                 elif module_type == "esp32":
                     # check esp32 app
                     esp32_app_version_dir = os.path.join(root, ele, "app")
@@ -95,7 +95,6 @@ def build(release_version):
                     esp32_ota_version_dir = os.path.join(root, ele, "ota")
                     esp32_ota_version_list = os.listdir(esp32_ota_version_dir)
                     esp32_ota_version_list = sorted(esp32_ota_version_list, key=cmp_to_key(compare_version), reverse=True)
-
                     if len(esp32_ota_version_list):
                         latest_version["esp32_ota"] = esp32_ota_version_list[0]
 
