@@ -163,6 +163,20 @@ def build(release_version):
                     dest_path = os.path.join(esp32_path, bin_name)
                     shutil.copy(bin_path, dest_path)
                     print(f"copy esp {sub_name} {version_name}")
+            elif key in ["bootloader_e103", "bootloader_e230"]:
+                module_name = "bootloader"
+                chip_version = key.split("_")[1]
+                version_name = version_info[key]
+                bin_names = [
+                    key + ".bin",
+                    "second_" + key + ".bin",
+                ]
+
+                for bin_name in bin_names:
+                    bin_path = os.path.join(root, module_name, chip_version, version_name, bin_name)
+                    dest_path = os.path.join(modules_path, bin_name)
+                    shutil.copy(bin_path, dest_path)
+                    print(f"copy bootloader {chip_version} {version_name}")
 
         owd = os.getcwd()
         os.chdir(build_path)
