@@ -5,8 +5,8 @@
 ### OS
 | | |
 |:---|:---|
-| e103 | v1.3.0 |
-| e230 | v1.3.0 |
+| e103 | **v1.3.1** |
+| e230 | **v1.3.1** |
 
 ### Bootloader
 | | |
@@ -17,30 +17,33 @@
 ### Module
 | | |
 |:---|:---|
-| Battery | v1.0.5 |
-| Button | v1.0.0 |
-| Dial | **v1.0.4** |
-| Display | v1.3.0 |
-| Environment | v1.0.2 |
-| Imu | v1.1.3 |
-| Joystick | v1.1.1 |
-| Led | v1.0.0 |
-| Motor | v1.2.1 |
-| Speaker | v1.2.1 |
+| Battery | **v1.0.6** |
+| Button | **v1.0.1** |
+| Dial | **v1.0.5** |
+| Display | **v1.3.1** |
+| Environment | **v1.0.3** |
+| Imu | **v1.1.4** |
+| Joystick | **v1.1.2** |
+| Led | **v1.0.1** |
+| Motor | **v1.2.2** |
+| Speaker | **v1.2.2** |
 | Tof | **v1.1.3** |
-| Network | **v1.1.3** |
-| Network app | **v4.4.0** |
+| Network | **v1.1.4** |
+| Network app | **v4.4.1** |
 | Network ota | v1.0.0 |
 
 ## Feature
 
-### Dial
-1. 변경된 사출에 따른 값 범위 변경
+### OS (e230)
+1. 전원 불안정 감지 기능 추가
+
+## Hotfix
+
+### Network app
+1. 네트워크 모듈의 데이터 보내기와 데이터 받기가 겹치는 오류 수정
+2. 유저 코드 실행 시, 실행을 못하는 오류 수정
 
 ## Patch
 
-### Network
-1. 크롬북 대응용 기능 추가
-
 ### Network app
-1. 크롬북 대응용 기능 추가
+1. atan 함수 추가
