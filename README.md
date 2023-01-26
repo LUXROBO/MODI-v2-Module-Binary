@@ -27,7 +27,7 @@
 | Led | **v1.0.1** |
 | Motor | **v1.2.2** |
 | Speaker | **v1.2.2** |
-| Tof | **v1.1.3** |
+| Tof | **v1.1.4** |
 | Network | **v1.1.4** |
 | Network app | **v4.4.1** |
 | Network ota | v1.0.0 |
