@@ -183,8 +183,8 @@ def build(release_version):
         shutil.make_archive("firmware", "zip", firmware_path)
         os.chdir(owd)
 
-        if os.path.exists(firmware_path):
-            rmtree(firmware_path)
+        # if os.path.exists(firmware_path):
+        #     rmtree(firmware_path)
 
         shutil.make_archive(release_version, "zip", build_path)
         shutil.move(f"{release_version}.zip", os.path.join(build_path, f"{release_version}.zip"))
